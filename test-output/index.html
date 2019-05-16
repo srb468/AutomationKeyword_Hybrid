@@ -1,0 +1,921 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 18 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Framework">
+              <span class="suite-name border-failed">Framework</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Framework">
+                    <span>C:\Workspace\Automation_Hybrid\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Framework">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Framework">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Framework">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Framework">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Framework">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Framework">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">20 methods, 18 failed,   2 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Framework" class="hide-methods failed suite-Framework"> (hide)</a> <!-- hide-methods failed suite-Framework -->
+                      <a href="#" panel-name="suite-Framework" class="show-methods failed suite-Framework"> (show)</a> <!-- show-methods failed suite-Framework -->
+                    </span>
+                    <div class="method-list-content failed suite-Framework">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(Open application, OPENAPP, , , )">testCase_Logout(Open application, OPENAPP, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(Submit, CLICK, Xpath, //*[@id=&quot;SubmitLogin&quot;], )">testCase_Logout(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(Enter password, SETTEXT, Xpath, //*[@id=&quot;passwd&quot;], srb468)">testCase_Logout(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(Enter username, SETTEXT, Xpath, //*[@id=&quot;email&quot;], singh.saurabh5686@gmail.com)">testCase_Logout(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)">testCase_Logout(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(Click sign in button, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a, )">testCase_Logout(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Open Order history, CLICK, Xpath, //*[@id=&quot;center_column&quot;]/div/div[1]/ul/li[1]/a/span, )">testCase_ValidateOrderHistory(Open Order history, CLICK, Xpath, //*[@id="center_column"]/div/div[1]/ul/li[1]/a/span, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Go to HOME, CLICK, Xpath, //*[@id=&quot;center_column&quot;]/ul/li[2]/a/span, )">testCase_ValidateOrderHistory(Go to HOME, CLICK, Xpath, //*[@id="center_column"]/ul/li[2]/a/span, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Click signout, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[2]/a, )">testCase_ValidateOrderHistory(Click signout, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[2]/a, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Open application, OPENAPP, , , )">testCase_ValidateOrderHistory(Open application, OPENAPP, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Click sign in button, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a, )">testCase_ValidateOrderHistory(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Close browser, TEARDOWN, , , )">testCase_ValidateOrderHistory(Close browser, TEARDOWN, , , )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Submit, CLICK, Xpath, //*[@id=&quot;SubmitLogin&quot;], )">testCase_ValidateOrderHistory(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)">testCase_ValidateOrderHistory(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Enter password, SETTEXT, Xpath, //*[@id=&quot;passwd&quot;], srb468)">testCase_ValidateOrderHistory(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Validate logged in username, VALIDATETEXT, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a/span...)">testCase_ValidateOrderHistory(Validate logged in username, VALIDATETEXT, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a/span...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Validate for no order, VALIDATETEXT, Xpath, //*[@id=&quot;block-history&quot;]/p, You have not placed any orde...)">testCase_ValidateOrderHistory(Validate for no order, VALIDATETEXT, Xpath, //*[@id="block-history"]/p, You have not placed any orde...)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(Enter username, SETTEXT, Xpath, //*[@id=&quot;email&quot;], singh.saurabh5686@gmail.com)">testCase_ValidateOrderHistory(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Framework -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Framework" class="hide-methods passed suite-Framework"> (hide)</a> <!-- hide-methods passed suite-Framework -->
+                      <a href="#" panel-name="suite-Framework" class="show-methods passed suite-Framework"> (show)</a> <!-- show-methods passed suite-Framework -->
+                    </span>
+                    <div class="method-list-content passed suite-Framework">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.Logout" hash-for-method="testCase_Logout(wait, WAIT, , , 2000)">testCase_Logout(wait, WAIT, , , 2000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Framework" title="TestCase.ValidateOrderHistory" hash-for-method="testCase_ValidateOrderHistory(wait, WAIT, , , 2000)">testCase_ValidateOrderHistory(wait, WAIT, , , 2000)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Framework -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Framework" class="panel Framework">
+          <div class="suite-Framework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCase.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(Open application, OPENAPP, , , )">
+                  </a> <!-- testCase_Logout(Open application, OPENAPP, , , ) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(Open application, OPENAPP, , , )</span>
+                  <div class="stack-trace">io.github.bonigarcia.wdm.WebDriverManagerException: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:612)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:609)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:271)
+	at Utils.UIUtils.openApp(UIUtils.java:69)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:28)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.github.bonigarcia.wdm.HttpClient.execute(HttpClient.java:160)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:907)
+	at io.github.bonigarcia.wdm.ChromeDriverManager.getDrivers(ChromeDriverManager.java:50)
+	at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:628)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:523)
+	... 31 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:339)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(Submit, CLICK, Xpath, //*[@id=&quot;SubmitLogin&quot;], )">
+                  </a> <!-- testCase_Logout(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], ) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(Enter password, SETTEXT, Xpath, //*[@id=&quot;passwd&quot;], srb468)">
+                  </a> <!-- testCase_Logout(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(Enter username, SETTEXT, Xpath, //*[@id=&quot;email&quot;], singh.saurabh5686@gmail.com)">
+                  </a> <!-- testCase_Logout(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)">
+                  </a> <!-- testCase_Logout(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.validateURL(UIUtils.java:80)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:34)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(Click sign in button, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a, )">
+                  </a> <!-- testCase_Logout(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, ) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Framework-class-failed -->
+          <div class="suite-Framework-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">TestCase.ValidateOrderHistory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Open Order history, CLICK, Xpath, //*[@id=&quot;center_column&quot;]/div/div[1]/ul/li[1]/a/span, )">
+                  </a> <!-- testCase_ValidateOrderHistory(Open Order history, CLICK, Xpath, //*[@id="center_column"]/div/div[1]/ul/li[1]/a/span, ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Open Order history, CLICK, Xpath, //*[@id="center_column"]/div/div[1]/ul/li[1]/a/span, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Go to HOME, CLICK, Xpath, //*[@id=&quot;center_column&quot;]/ul/li[2]/a/span, )">
+                  </a> <!-- testCase_ValidateOrderHistory(Go to HOME, CLICK, Xpath, //*[@id="center_column"]/ul/li[2]/a/span, ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Go to HOME, CLICK, Xpath, //*[@id="center_column"]/ul/li[2]/a/span, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Click signout, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[2]/a, )">
+                  </a> <!-- testCase_ValidateOrderHistory(Click signout, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[2]/a, ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Click signout, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[2]/a, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Open application, OPENAPP, , , )">
+                  </a> <!-- testCase_ValidateOrderHistory(Open application, OPENAPP, , , ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Open application, OPENAPP, , , )</span>
+                  <div class="stack-trace">io.github.bonigarcia.wdm.WebDriverManagerException: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:612)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:609)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:271)
+	at Utils.UIUtils.openApp(UIUtils.java:69)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:28)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.github.bonigarcia.wdm.HttpClient.execute(HttpClient.java:160)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:907)
+	at io.github.bonigarcia.wdm.ChromeDriverManager.getDrivers(ChromeDriverManager.java:50)
+	at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:628)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:523)
+	... 31 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:339)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 more
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Click sign in button, CLICK, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a, )">
+                  </a> <!-- testCase_ValidateOrderHistory(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Close browser, TEARDOWN, , , )">
+                  </a> <!-- testCase_ValidateOrderHistory(Close browser, TEARDOWN, , , ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Close browser, TEARDOWN, , , )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Unknown Source)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at Utils.UIUtils.closeBrowser(UIUtils.java:205)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:40)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Submit, CLICK, Xpath, //*[@id=&quot;SubmitLogin&quot;], )">
+                  </a> <!-- testCase_ValidateOrderHistory(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], ) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)">
+                  </a> <!-- testCase_ValidateOrderHistory(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.validateURL(UIUtils.java:80)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:34)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Enter password, SETTEXT, Xpath, //*[@id=&quot;passwd&quot;], srb468)">
+                  </a> <!-- testCase_ValidateOrderHistory(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Validate logged in username, VALIDATETEXT, Xpath, //*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a/span...)">
+                  </a> <!-- testCase_ValidateOrderHistory(Validate logged in username, VALIDATETEXT, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a/span...) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Validate logged in username, VALIDATETEXT, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a/span, saurabh)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.validateText(UIUtils.java:93)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:37)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Validate for no order, VALIDATETEXT, Xpath, //*[@id=&quot;block-history&quot;]/p, You have not placed any orde...)">
+                  </a> <!-- testCase_ValidateOrderHistory(Validate for no order, VALIDATETEXT, Xpath, //*[@id="block-history"]/p, You have not placed any orde...) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Validate for no order, VALIDATETEXT, Xpath, //*[@id="block-history"]/p, You have not placed any orders.)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.validateText(UIUtils.java:93)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:37)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(Enter username, SETTEXT, Xpath, //*[@id=&quot;email&quot;], singh.saurabh5686@gmail.com)">
+                  </a> <!-- testCase_ValidateOrderHistory(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</span>
+                  <div class="stack-trace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Framework-class-failed -->
+          <div class="suite-Framework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.Logout</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_Logout(wait, WAIT, , , 2000)">
+                  </a> <!-- testCase_Logout(wait, WAIT, , , 2000) -->
+                  <span class="method-name">testCase_Logout</span>
+                  <span class="parameters">(wait, WAIT, , , 2000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Framework-class-passed -->
+          <div class="suite-Framework-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">TestCase.ValidateOrderHistory</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testCase_ValidateOrderHistory(wait, WAIT, , , 2000)">
+                  </a> <!-- testCase_ValidateOrderHistory(wait, WAIT, , , 2000) -->
+                  <span class="method-name">testCase_ValidateOrderHistory</span>
+                  <span class="parameters">(wait, WAIT, , , 2000)</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Framework-class-passed -->
+        </div> <!-- panel Framework -->
+        <div panel-name="test-xml-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Workspace\Automation_Hybrid\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite guice-stage=&quot;DEVELOPMENT&quot; name=&quot;Framework&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Automation: Hybrid&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;TestCase.ValidateOrderHistory&quot;/&gt;
+      &lt;class name=&quot;TestCase.Logout&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Automation: Hybrid --&gt;
+&lt;/suite&gt; &lt;!-- Framework --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Automation: Hybrid (2 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Framework');
+function tableData_Framework() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(20);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testCase_ValidateOrderHistory')
+data.setCell(0, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(0, 3, 43399);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'testCase_Logout')
+data.setCell(1, 2, 'TestCase.Logout')
+data.setCell(1, 3, 42733);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'testCase_ValidateOrderHistory')
+data.setCell(2, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(2, 3, 2006);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'testCase_Logout')
+data.setCell(3, 2, 'TestCase.Logout')
+data.setCell(3, 3, 2001);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'testCase_ValidateOrderHistory')
+data.setCell(4, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(4, 3, 67);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testCase_ValidateOrderHistory')
+data.setCell(5, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(5, 3, 14);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'testCase_Logout')
+data.setCell(6, 2, 'TestCase.Logout')
+data.setCell(6, 3, 4);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'testCase_ValidateOrderHistory')
+data.setCell(7, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(7, 3, 2);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testCase_Logout')
+data.setCell(8, 2, 'TestCase.Logout')
+data.setCell(8, 3, 2);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'testCase_Logout')
+data.setCell(9, 2, 'TestCase.Logout')
+data.setCell(9, 3, 2);
+data.setCell(10, 0, 10)
+data.setCell(10, 1, 'testCase_ValidateOrderHistory')
+data.setCell(10, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(10, 3, 2);
+data.setCell(11, 0, 11)
+data.setCell(11, 1, 'testCase_ValidateOrderHistory')
+data.setCell(11, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(11, 3, 2);
+data.setCell(12, 0, 12)
+data.setCell(12, 1, 'testCase_Logout')
+data.setCell(12, 2, 'TestCase.Logout')
+data.setCell(12, 3, 2);
+data.setCell(13, 0, 13)
+data.setCell(13, 1, 'testCase_ValidateOrderHistory')
+data.setCell(13, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(13, 3, 2);
+data.setCell(14, 0, 14)
+data.setCell(14, 1, 'testCase_ValidateOrderHistory')
+data.setCell(14, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(14, 3, 1);
+data.setCell(15, 0, 15)
+data.setCell(15, 1, 'testCase_ValidateOrderHistory')
+data.setCell(15, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(15, 3, 1);
+data.setCell(16, 0, 16)
+data.setCell(16, 1, 'testCase_ValidateOrderHistory')
+data.setCell(16, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(16, 3, 1);
+data.setCell(17, 0, 17)
+data.setCell(17, 1, 'testCase_Logout')
+data.setCell(17, 2, 'TestCase.Logout')
+data.setCell(17, 3, 1);
+data.setCell(18, 0, 18)
+data.setCell(18, 1, 'testCase_ValidateOrderHistory')
+data.setCell(18, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(18, 3, 1);
+data.setCell(19, 0, 19)
+data.setCell(19, 1, 'testCase_ValidateOrderHistory')
+data.setCell(19, 2, 'TestCase.ValidateOrderHistory')
+data.setCell(19, 3, 1);
+window.suiteTableData['Framework']= { tableData: data, tableDiv: 'times-div-Framework'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <div id="times-div-Framework">
+              </div> <!-- times-div-Framework -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Framework</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">2 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="ignored-class-div">
+              <span class="ignored-class-name">TestCase.Logout</span>
+              <div class="ignored-methods-div">
+                <span class="ignored-method-name">afterSuite</span>
+                <br/>
+                <span class="ignored-method-name">beforeSuite</span>
+                <br/>
+              </div> <!-- ignored-methods-div -->
+            </div> <!-- ignored-class-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Framework" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.ValidateOrderHistory</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">beforeSuite</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">350 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Open application, OPENAPP, , , )</span>
+                <span class="method-start">1772 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</span>
+                <span class="method-start">45181 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</span>
+                <span class="method-start">45199 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase_ValidateOrderHistory(wait, WAIT, , , 2000)</span>
+                <span class="method-start">45216 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</span>
+                <span class="method-start">47225 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</span>
+                <span class="method-start">47230 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</span>
+                <span class="method-start">47235 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Open Order history, CLICK, Xpath, //*[@id="center_column"]/div/div[1]/ul/li[1]/a/span, )</span>
+                <span class="method-start">47240 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Validate for no order, VALIDATETEXT, Xpath, //*[@id="block-history"]/p, You have not placed any orde...)</span>
+                <span class="method-start">47244 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Go to HOME, CLICK, Xpath, //*[@id="center_column"]/ul/li[2]/a/span, )</span>
+                <span class="method-start">47249 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Validate logged in username, VALIDATETEXT, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a/span...)</span>
+                <span class="method-start">47253 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Click signout, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[2]/a, )</span>
+                <span class="method-start">47258 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_ValidateOrderHistory(Close browser, TEARDOWN, , , )</span>
+                <span class="method-start">47263 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">47334 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.Logout</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">beforeTest</span>
+                <span class="method-start">47340 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(Open application, OPENAPP, , , )</span>
+                <span class="method-start">47656 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, )</span>
+                <span class="method-start">90415 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com)</span>
+                <span class="method-start">90422 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <span class="method-name">testCase_Logout(wait, WAIT, , , 2000)</span>
+                <span class="method-start">90426 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468)</span>
+                <span class="method-start">92429 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(Submit, CLICK, Xpath, //*[@id="SubmitLogin"], )</span>
+                <span class="method-start">92433 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testCase_Logout(URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account)</span>
+                <span class="method-start">92437 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-class after">
+                <span class="method-name">afterTest</span>
+                <span class="method-start">92442 ms</span>
+              </div> <!-- configuration-class after -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">TestCase.ValidateOrderHistory</div> <!-- chronological-class-name -->
+              <div class="configuration-suite after">
+                <span class="method-name">afterSuite</span>
+                <span class="method-start">92991 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

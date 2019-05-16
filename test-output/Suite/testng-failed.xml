@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <test thread-count="5" name="Test(failed)">
+    <classes>
+      <class name="TestCase.Logout">
+        <methods>
+          <include name="setup"/>
+          <include name="execute"/>
+          <include name="sendMail"/>
+        </methods>
+      </class> <!-- TestCase.Logout -->
+      <class name="TestCase.ValidateOrderHistory">
+        <methods>
+          <include name="execute"/>
+        </methods>
+      </class> <!-- TestCase.ValidateOrderHistory -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->

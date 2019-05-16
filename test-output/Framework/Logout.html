@@ -1,0 +1,134 @@
+<html>
+<head>
+<title>TestNG:  Logout</title>
+<link href="../testng.css" rel="stylesheet" type="text/css" />
+<link href="../my-testng.css" rel="stylesheet" type="text/css" />
+
+<style type="text/css">
+.log { display: none;} 
+.stack-trace { display: none;} 
+</style>
+<script type="text/javascript">
+<!--
+function flip(e) {
+  current = e.style.display;
+  if (current == 'block') {
+    e.style.display = 'none';
+    return 0;
+  }
+  else {
+    e.style.display = 'block';
+    return 1;
+  }
+}
+
+function toggleBox(szDivId, elem, msg1, msg2)
+{
+  var res = -1;  if (document.getElementById) {
+    res = flip(document.getElementById(szDivId));
+  }
+  else if (document.all) {
+    // this is the way old msie versions work
+    res = flip(document.all[szDivId]);
+  }
+  if(elem) {
+    if(res == 0) elem.innerHTML = msg1; else elem.innerHTML = msg2;
+  }
+
+}
+
+function toggleAllBoxes() {
+  if (document.getElementsByTagName) {
+    d = document.getElementsByTagName('div');
+    for (i = 0; i < d.length; i++) {
+      if (d[i].className == 'log') {
+        flip(d[i]);
+      }
+    }
+  }
+}
+
+// -->
+</script>
+
+</head>
+<body>
+<h2 align='center'>Logout</h2><table border='1' align="center">
+<tr>
+<td>Tests passed/Failed/Skipped:</td><td>11/0/0</td>
+</tr><tr>
+<td>Started on:</td><td>Sun Jan 27 22:11:40 IST 2019</td>
+</tr>
+<tr><td>Total time:</td><td>24 seconds (24458 ms)</td>
+</tr><tr>
+<td>Included groups:</td><td></td>
+</tr><tr>
+<td>Excluded groups:</td><td></td>
+</tr>
+</table><p/>
+<small><i>(Hover the method name to see the test class name)</i></small><p/>
+<table width='100%' border='1' class='invocation-passed'>
+<tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
+<tr><td><b>Test method</b></td>
+<td width="30%"><b>Exception</b></td>
+<td width="10%"><b>Time (seconds)</b></td>
+<td><b>Instance</b></td>
+</tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Open application, OPENAPP, , , </td>
+<td></td>
+<td>11</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Click sign in button, CLICK, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a, </td>
+<td></td>
+<td>2</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Enter username, SETTEXT, Xpath, //*[@id="email"], singh.saurabh5686@gmail.com</td>
+<td></td>
+<td>0</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: wait, WAIT, , , 2000</td>
+<td></td>
+<td>2</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Enter password, SETTEXT, Xpath, //*[@id="passwd"], srb468</td>
+<td></td>
+<td>0</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Submit, CLICK, Xpath, //*[@id="SubmitLogin"], </td>
+<td></td>
+<td>2</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: URL validation, VALIDATEURL, , , http://automationpractice.com/index.php?controller=my-account</td>
+<td></td>
+<td>0</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Open Order history, CLICK, Xpath, //*[@id="center_column"]/div/div[1]/ul/li[1]/a/span, </td>
+<td></td>
+<td>2</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Validate for no order, VALIDATETEXT, Xpath, //*[@id="block-history"]/p, You have not placed any orders.</td>
+<td></td>
+<td>0</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Go to HOME, CLICK, Xpath, //*[@id="center_column"]/ul/li[2]/a/span, </td>
+<td></td>
+<td>3</td>
+<td>TestCase.Logout@2d928643</td></tr>
+<tr>
+<td title='TestCase.Logout.execute()'><b>execute</b><br>Test class: TestCase.Logout<br>Parameters: Validate logged in username, VALIDATETEXT, Xpath, //*[@id="header"]/div[2]/div/div/nav/div[1]/a/span, saurabh singh</td>
+<td></td>
+<td>0</td>
+<td>TestCase.Logout@2d928643</td></tr>
+</table><p>
+</body>
+</html>

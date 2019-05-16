@@ -1,0 +1,181 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"/>
+<title>TestNG Report</title>
+<style type="text/css">table {margin-bottom:10px;border-collapse:collapse;empty-cells:show}th,td {border:1px solid #009;padding:.25em .5em}th {vertical-align:bottom}td {vertical-align:top}table a {font-weight:bold}.stripe td {background-color: #E6EBF9}.num {text-align:right}.passedodd td {background-color: #3F3}.passedeven td {background-color: #0A0}.skippedodd td {background-color: #DDD}.skippedeven td {background-color: #CCC}.failedodd td,.attn {background-color: #F33}.failedeven td,.stripe .attn {background-color: #D00}.stacktrace {white-space:pre;font-family:monospace}.totop {font-size:85%;text-align:center;border-bottom:2px solid #000}.invisible {display:none}</style>
+</head>
+<body>
+<table>
+<tr><th>Test</th><th># Passed</th><th># Skipped</th><th># Failed</th><th>Time (ms)</th><th>Included Groups</th><th>Excluded Groups</th></tr>
+<tr><th colspan="7">Framework</th></tr>
+<tr><td><a href="#t0">Automation: Hybrid</a></td><td class="num">2</td><td class="num">0</td><td class="num attn">18</td><td class="num">92,113</td><td></td><td></td></tr>
+</table>
+<table id='summary'><thead><tr><th>Class</th><th>Method</th><th>Start</th><th>Time (ms)</th></tr></thead><tbody><tr><th colspan="4">Framework</th></tr></tbody><tbody id="t0"><tr><th colspan="4">Automation: Hybrid &#8212; failed</th></tr><tr class="failedeven"><td rowspan="6">TestCase.Logout</td><td><a href="#m0">testCase_Logout</a></td><td rowspan="6">1552453752271</td><td rowspan="6">42733</td></tr><tr class="failedeven"><td><a href="#m1">testCase_Logout</a></td></tr><tr class="failedeven"><td><a href="#m2">testCase_Logout</a></td></tr><tr class="failedeven"><td><a href="#m3">testCase_Logout</a></td></tr><tr class="failedeven"><td><a href="#m4">testCase_Logout</a></td></tr><tr class="failedeven"><td><a href="#m5">testCase_Logout</a></td></tr><tr class="failedodd"><td rowspan="12">TestCase.ValidateOrderHistory</td><td><a href="#m6">testCase_ValidateOrderHistory</a></td><td rowspan="12">1552453751855</td><td rowspan="12">1</td></tr><tr class="failedodd"><td><a href="#m7">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m8">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m9">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m10">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m11">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m12">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m13">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m14">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m15">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m16">testCase_ValidateOrderHistory</a></td></tr><tr class="failedodd"><td><a href="#m17">testCase_ValidateOrderHistory</a></td></tr><tr><th colspan="4">Automation: Hybrid &#8212; passed</th></tr><tr class="passedeven"><td rowspan="1">TestCase.Logout</td><td><a href="#m18">testCase_Logout</a></td><td rowspan="1">1552453795041</td><td rowspan="1">2001</td></tr><tr class="passedodd"><td rowspan="1">TestCase.ValidateOrderHistory</td><td><a href="#m19">testCase_ValidateOrderHistory</a></td><td rowspan="1">1552453749831</td><td rowspan="1">2006</td></tr></tbody>
+</table>
+<h2>Automation: Hybrid</h2><h3 id="m0">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Open application</td><td>OPENAPP</td><td></td><td></td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.github.bonigarcia.wdm.WebDriverManagerException: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:612)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:609)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:271)
+	at Utils.UIUtils.openApp(UIUtils.java:69)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:28)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.github.bonigarcia.wdm.HttpClient.execute(HttpClient.java:160)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:907)
+	at io.github.bonigarcia.wdm.ChromeDriverManager.getDrivers(ChromeDriverManager.java:50)
+	at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:628)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:523)
+	... 31 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:339)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m1">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Submit</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;SubmitLogin&quot;]</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m2">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Enter password</td><td>SETTEXT</td><td>Xpath</td><td>//*[@id=&quot;passwd&quot;]</td><td>srb468</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m3">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Enter username</td><td>SETTEXT</td><td>Xpath</td><td>//*[@id=&quot;email&quot;]</td><td>singh.saurabh5686@gmail.com</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m4">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>URL validation</td><td>VALIDATEURL</td><td></td><td></td><td>http://automationpractice.com/index.php?controller=my-account</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.validateURL(UIUtils.java:80)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:34)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m5">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Click sign in button</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.Logout.testCase_Logout(Logout.java:26)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m6">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Open Order history</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;center_column&quot;]/div/div[1]/ul/li[1]/a/span</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m7">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Go to HOME</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;center_column&quot;]/ul/li[2]/a/span</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m8">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Click signout</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[2]/a</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m9">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Open application</td><td>OPENAPP</td><td></td><td></td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">io.github.bonigarcia.wdm.WebDriverManagerException: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:612)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.handleException(WebDriverManager.java:609)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:538)
+	at io.github.bonigarcia.wdm.WebDriverManager.setup(WebDriverManager.java:271)
+	at Utils.UIUtils.openApp(UIUtils.java:69)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:28)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+Caused by: org.apache.http.conn.HttpHostConnectException: Connect to chromedriver.storage.googleapis.com:443 [chromedriver.storage.googleapis.com/216.58.201.240] failed: Connection timed out: connect
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:159)
+	at org.apache.http.impl.conn.PoolingHttpClientConnectionManager.connect(PoolingHttpClientConnectionManager.java:373)
+	at org.apache.http.impl.execchain.MainClientExec.establishRoute(MainClientExec.java:381)
+	at org.apache.http.impl.execchain.MainClientExec.execute(MainClientExec.java:237)
+	at org.apache.http.impl.execchain.ProtocolExec.execute(ProtocolExec.java:185)
+	at org.apache.http.impl.execchain.RetryExec.execute(RetryExec.java:89)
+	at org.apache.http.impl.execchain.RedirectExec.execute(RedirectExec.java:111)
+	at org.apache.http.impl.client.InternalHttpClient.doExecute(InternalHttpClient.java:185)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:83)
+	at org.apache.http.impl.client.CloseableHttpClient.execute(CloseableHttpClient.java:108)
+	at io.github.bonigarcia.wdm.HttpClient.execute(HttpClient.java:160)
+	at io.github.bonigarcia.wdm.WebDriverManager.getDriversFromXml(WebDriverManager.java:907)
+	at io.github.bonigarcia.wdm.ChromeDriverManager.getDrivers(ChromeDriverManager.java:50)
+	at io.github.bonigarcia.wdm.WebDriverManager.filterCandidateUrls(WebDriverManager.java:628)
+	at io.github.bonigarcia.wdm.WebDriverManager.manage(WebDriverManager.java:523)
+	... 31 more
+Caused by: java.net.ConnectException: Connection timed out: connect
+	at java.net.DualStackPlainSocketImpl.connect0(Native Method)
+	at java.net.DualStackPlainSocketImpl.socketConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.doConnect(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connectToAddress(Unknown Source)
+	at java.net.AbstractPlainSocketImpl.connect(Unknown Source)
+	at java.net.PlainSocketImpl.connect(Unknown Source)
+	at java.net.SocksSocketImpl.connect(Unknown Source)
+	at java.net.Socket.connect(Unknown Source)
+	at org.apache.http.conn.ssl.SSLConnectionSocketFactory.connectSocket(SSLConnectionSocketFactory.java:339)
+	at org.apache.http.impl.conn.DefaultHttpClientConnectionOperator.connect(DefaultHttpClientConnectionOperator.java:142)
+	... 45 more
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m10">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Click sign in button</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m11">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Close browser</td><td>TEARDOWN</td><td></td><td></td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at java.util.Objects.requireNonNull(Unknown Source)
+	at org.openqa.selenium.support.ui.FluentWait.&lt;init&gt;(FluentWait.java:106)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:85)
+	at org.openqa.selenium.support.ui.WebDriverWait.&lt;init&gt;(WebDriverWait.java:45)
+	at Utils.UIUtils.closeBrowser(UIUtils.java:205)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:40)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m12">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Submit</td><td>CLICK</td><td>Xpath</td><td>//*[@id=&quot;SubmitLogin&quot;]</td><td></td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.clickOn(UIUtils.java:173)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:19)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m13">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>URL validation</td><td>VALIDATEURL</td><td></td><td></td><td>http://automationpractice.com/index.php?controller=my-account</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.validateURL(UIUtils.java:80)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:34)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m14">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Enter password</td><td>SETTEXT</td><td>Xpath</td><td>//*[@id=&quot;passwd&quot;]</td><td>srb468</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m15">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate logged in username</td><td>VALIDATETEXT</td><td>Xpath</td><td>//*[@id=&quot;header&quot;]/div[2]/div/div/nav/div[1]/a/span</td><td>saurabh</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.validateText(UIUtils.java:93)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:37)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m16">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Validate for no order</td><td>VALIDATETEXT</td><td>Xpath</td><td>//*[@id=&quot;block-history&quot;]/p</td><td>You have not placed any orders.</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.validateText(UIUtils.java:93)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:37)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m17">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>Enter username</td><td>SETTEXT</td><td>Xpath</td><td>//*[@id=&quot;email&quot;]</td><td>singh.saurabh5686@gmail.com</td></tr><tr><th colspan="5">Exception</th></tr><tr><td colspan="5"><div class="stacktrace">java.lang.NullPointerException
+	at Utils.UIUtils.enterText(UIUtils.java:156)
+	at Utils.KeywordMapping.operation(KeywordMapping.java:22)
+	at TestCase.ValidateOrderHistory.testCase_ValidateOrderHistory(ValidateOrderHistory.java:39)
+... Removed 25 stack frames</div></td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m18">TestCase.Logout#testCase_Logout</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>wait</td><td>WAIT</td><td></td><td></td><td>2000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+<h3 id="m19">TestCase.ValidateOrderHistory#testCase_ValidateOrderHistory</h3><table class="result"><tr class="param"><th>Parameter #1</th><th>Parameter #2</th><th>Parameter #3</th><th>Parameter #4</th><th>Parameter #5</th></tr><tr class="param stripe"><td>wait</td><td>WAIT</td><td></td><td></td><td>2000</td></tr></table><p class="totop"><a href="#summary">back to summary</a></p>
+</body>
+</html>
